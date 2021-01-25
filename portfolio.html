@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="normalize" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a
+          class="logotype-header"
+          href="/"
+          aria-label="логотип сайта"
+          lang="en"
+        >
+          Web<span class="part-logo">Studio</span>
+        </a>
+        <button type="button" class="menu-button" data-menu-button>
+          <svg
+            class="menu-icon"
+            aria-label="переключатель меню навигации"
+            aria-expanded="false"
+            aria-controls="menu-container"
+          >
+            <use class="icon-cross" href="./images/symbol-defs.svg#cross"></use>
+            <use class="icon-menu" href="./images/symbol-defs.svg#menu"></use>
+          </svg>
+        </button>
+        <div class="menu-container" id="menu-container" data-menu>
+          <nav class="navigation">
+            <ul class="navigation-list">
+              <li class="navigation-list-item">
+                <a class="navigation-list-link" href="./index.html"> Студия </a>
+              </li>
+              <li class="navigation-list-item">
+                <a class="navigation-list-link current" href="./portfolio.html">
+                  Портфолио
+                </a>
+              </li>
+              <li class="navigation-list-item">
+                <a class="navigation-list-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="adress">
+            <a class="header-mail" href="mailto:info@devstudio.com">
+              <svg class="link-tel">
+                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+            <a class="header-tel" href="tel:+380961111111">
+              <svg class="link-mail">
+                <use href="./images/symbol-defs.svg#icon-telephone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </address>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="product-list">
+        <!--to hide name of section-->
+        <h1 class="product-title visually-hidden">Наши проекты</h1>
+        <div class="container">
+          <ul class="btn-list">
+            <li class="btn-list-item">
+              <button class="btn-list-title" type="button">Все</button>
+            </li>
+            <li class="btn-list-item">
+              <button class="btn-list-title" type="button">Веб-сайты</button>
+            </li>
+            <li class="btn-list-item">
+              <button class="btn-list-title" type="button">Приложения</button>
+            </li>
+            <li class="btn-list-item">
+              <button class="btn-list-title" type="button">Дизайн</button>
+            </li>
+            <li class="btn-list-item">
+              <button class="btn-list-title" type="button">Маркетинг</button>
+            </li>
+          </ul>
+          <ul class="project-list">
+            <li class="project-list-item">
+              <a class="project-list-item-link" href="">
+                <div class="project-thumb">
+                  <picture class="project-card">
+                    <source
+                      srcset="
+                        ./images/portfolio-img/portfolio-desktop-1.jpg    1x,
+                        ./images/portfolio-img/portfolio-desktop-1@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/portfolio-tablet-1.jpg    1x,
+                        ./images/portfolio-img/portfolio-tablet-1@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/portfolio-mobile-1.jpg    1x,
+                        ./images/portfolio-img/portfolio-mobile-1@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio-img/portfolio-mobile-1.jpg"
+                      alt="ноутбук с изображениями проектов"
+                    />
+                  </picture>
+                  <p class="overlay-project">
+                    Технокряк это современная площадка распространения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов.
+                  </p>
+                </div>
+                <div class="project-item">
+                  <h2 class="project-title">Технокряк</h2>
+                  <p class="project-description">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-list-item">
+              <a class="project-list-item-link" href="#">
+                <div class="project-thumb">
+                  <picture class="project-card">
+                    <source
+                      srcset="
+                        ./images/portfolio-img/portfolio-desktop-2.jpg    1x,
+                        ./images/portfolio-img/portfolio-desktop-2@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/portfolio-tablet-2.jpg    1x,
+                        ./images/portfolio-img/portfolio-tablet-2@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/portfolio-mobile-2.jpg    1x,
+                        ./images/portfolio-img/portfolio-mobile-2@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio-img/portfolio-mobile-2.jpg"
+                      alt="спортсмены с мячом"
+                    />
+                  </picture>
+
+                  <p class="overlay-project">
+                    Технокряк это современная площадка распространения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов.
+                  </p>
+                </div>
+                <div class="project-item secondary">
+                  <h2 class="project-title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="project-description">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-list-item">
+              <a class="project-list-item-link" href="#">
+                <div class="project-thumb">
+                  <picture class="project-card">
+                    <source
+                      srcset="
+                        ./images/portfolio-img/portfolio-desktop-3.jpg    1x,
+                        ./images/portfolio-img/portfolio-desktop-3@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/portfolio-tablet-3.jpg    1x,
+                        ./images/portfolio-img/portfolio-tablet-3@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/portfolio-mobile-3.jpg    1x,
+                        ./images/portfolio-img/portfolio-mobile-3@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio-img/portfolio-mobile-3jpg"
+                      alt="постер с надписью названия ресторана"
+                    />
+                  </picture>
+
+                  <p class="overlay-project">текст</p>
+                </div>
+                <div class="project-item">
+                  <h2 class="project-title">Ресторан Seafood</h2>
+                  <p class="project-description">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-list-item">
+              <a class="project-list-item-link" href="">
+                <div class="project-thumb">
+                  <picture class="project-card">
+                    <source
+                      srcset="
+                        ./images/portfolio-img/portfolio-desktop-4.jpg    1x,
+                        ./images/portfolio-img/portfolio-desktop-4@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/portfolio-tablet-4.jpg    1x,
+                        ./images/portfolio-img/portfolio-tablet-4@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/portfolio-mobile-4.jpg    1x,
+                        ./images/portfolio-img/portfolio-mobile-4@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio-img/portfolio-mobile-4.jpg"
+                      alt="наушники"
+                    />
+                  </picture>
+
+                  <p class="overlay-project">текст</p>
+                </div>
+                <div class="project-item">
+                  <h2 class="project-title">Проект Prime</h2>
+                  <p class="project-description">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-list-item">
+              <a class="project-list-item-link" href="#">
+                <div class="project-thumb">
+                  <picture class="project-card">
+                    <source
+                      srcset="
+                        ./images/portfolio-img/portfolio-desktop-5.jpg    1x,
+                        ./images/portfolio-img/portfolio-desktop-5@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/portfolio-tablet-5.jpg    1x,
+                        ./images/portfolio-img/portfolio-tablet-5@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/portfolio-mobile-5.jpg    1x,
+                        ./images/portfolio-img/portfolio-mobile-5@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio-img/portfolio-mobile-5.jpg"
+                      alt="коробки"
+                    />
+                  </picture>
+
+                  <p class="overlay-project">текст</p>
+                </div>
+                <div class="project-item">
+                  <h2 class="project-title">Проект Boxes</h2>
+                  <p class="project-description">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-list-item">
+              <a class="project-list-item-link" href="#">
+                <div class="project-thumb">
+                  <picture class="project-card">
+                    <source
+                      srcset="
+                        ./images/portfolio-img/portfolio-desktop-6.jpg    1x,
+                        ./images/portfolio-img/portfolio-desktop-6@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/portfolio-tablet-6.jpg    1x,
+                        ./images/portfolio-img/portfolio-tablet-6@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/portfolio-mobile-6.jpg    1x,
+                        ./images/portfolio-img/portfolio-mobile-6@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio-img/portfolio-mobile-6.jpg"
+                      alt="экран компьютера"
+                    />
+                  </picture>
+
+                  <p class="overlay-project">текст</p>
+                </div>
+                <div class="project-item">
+                  <h2 class="project-title">Inspiration has no Borders</h2>
+                  <p class="project-description">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-list-item">
+              <a class="project-list-item-link" href="#">
+                <div class="project-thumb">
+                  <picture class="project-card">
+                    <source
+                      srcset="
+                        ./images/portfolio-img/portfolio-desktop-7.jpg    1x,
+                        ./images/portfolio-img/portfolio-desktop-7@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/portfolio-tablet-7.jpg    1x,
+                        ./images/portfolio-img/portfolio-tablet-7@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/portfolio-mobile-7.jpg    1x,
+                        ./images/portfolio-img/portfolio-mobile-7@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio-img/portfolio-mobile-7.jpg"
+                      alt="развернутый журнал"
+                    />
+                  </picture>
+
+                  <p class="overlay-project">текст</p>
+                </div>
+                <div class="project-item">
+                  <h2 class="project-title">Издание Limited Edition</h2>
+                  <p class="project-description">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-list-item">
+              <a class="project-list-item-link" href="#">
+                <div class="project-thumb">
+                  <picture class="project-card">
+                    <source
+                      srcset="
+                        ./images/portfolio-img/portfolio-desktop-8.jpg    1x,
+                        ./images/portfolio-img/portfolio-desktop-8@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/portfolio-tablet-8.jpg    1x,
+                        ./images/portfolio-img/portfolio-tablet-8@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/portfolio-mobile-8.jpg    1x,
+                        ./images/portfolio-img/portfolio-mobile-8@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio-img/portfolio-mobile-8.jpg"
+                      alt="ярлык c буквами"
+                    />
+                  </picture>
+
+                  <p class="overlay-project">текст</p>
+                </div>
+                <div class="project-item">
+                  <h2 class="project-title">Проект LAB</h2>
+                  <p class="project-description">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-list-item">
+              <a class="project-list-item-link" href="#">
+                <div class="project-thumb">
+                  <picture class="project-card">
+                    <source
+                      srcset="
+                        ./images/portfolio-img/portfolio-desktop-9.jpg    1x,
+                        ./images/portfolio-img/portfolio-desktop-9@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/portfolio-tablet-9.jpg    1x,
+                        ./images/portfolio-img/portfolio-tablet-9@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/portfolio-mobile-9.jpg    1x,
+                        ./images/portfolio-img/portfolio-mobile-9@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio-img/portfolio-mobile-9.jpg"
+                      alt="ноутбук с названием проекта"
+                    />
+                  </picture>
+
+                  <p class="overlay-project">текст</p>
+                </div>
+                <div class="project-item">
+                  <h2 class="project-title">Growing Business</h2>
+                  <p class="project-description">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer-main">
+      <div class="container">
+        <div class="footer-section">
+          <a
+            class="logotype-footer"
+            href="/"
+            aria-label="логотип сайта"
+            lang="en"
+            >Web<span class="footer-part-logo">Studio</span>
+          </a>
+          <address class="adress">
+            <ul class="footer-adress">
+              <li class="footer-adress-link">
+                <a class="footer-adress-map" href=""
+                  >г. Киев, пр-т Леси Украинки, 26
+                </a>
+              </li>
+              <li class="footer-adress-link">
+                <a class="footer-adress-mail" href="info@example.com">
+                  info@example.com
+                </a>
+              </li>
+              <li class="footer-adress-link">
+                <a class="footer-adress-call" href="tel:+380991111111">
+                  +38 099 111 11 11
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="social-link-list">
+          <p class="invitation">присоединяйтесь</p>
+          <ul class="social-links">
+            <li class="social-link">
+              <a class="social-link-item" href="">
+                <svg class="icon-social">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-link">
+              <a class="social-link-item" href="">
+                <svg class="icon-social">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-link">
+              <a class="social-link-item" href="">
+                <svg class="icon-social">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-link">
+              <a class="social-link-item" href="">
+                <svg class="icon-social">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="form-list">
+          <form class="footer-form" autocomplete="off">
+            <label class="footer-form-label">
+              Подпишитесь на рассылку
+              <input
+                class="footer-form-input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="main-btn" type="submit">Подписаться</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+.product-list {
+  padding: 60px 0;
+}
+
+.project-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: -15px;
+  }
+}
+.project-list-item {
+  border: 1px solid #eeeeee;
+  margin-bottom: 30px;
+  max-height: 404px;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 3 * 30px) / 3);
+    margin: 15px;
+  }
+
+  border: 1px solid #eeeeee;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+.project-list-item:last-child {
+  margin-bottom: 0;
+}
+.project-item {
+  padding: 20px 24px;
+}
+.project-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin: 0 0 4px;
+  color: black;
+}
+
+.project-description {
+  color: #757575;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+}
+.project-thumb {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.overlay-project {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 77px 24px;
+  font-size: 18px;
+  color: white;
+  background-color: rgba(33, 150, 243, 0.9);
+  line-height: 1.556;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .project-list-item-link:hover &,
+  .project-list-item-link:focus & {
+    transform: translateY(0);
+  }
+  @media screen and (min-width: 768px) {
+    padding: 49px 24px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 63px 24px;
+  }
+}
+.project-card {
+  display: inline-block;
+  border: 1px solid #eeeeee;
+}
+.secondary {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 15px;
+    .project-title {
+      line-height: 1.167;
+    }
+  }
+}
+/*sizes="(min-width: 1200px) 25vw, 
+                (min-width: 768px) 50vw, 
+                (min-width: 480px) 100vw,
+                100vw"
+                 ./images/team/person3-desktop.jpg 1x,
+                    ./images/team/person3-tablet.jpg  2x,
+                    ./images/team/person3-mobile.jpg  3x*/

@@ -1,0 +1,98 @@
+.footer-main {
+  padding: 60px 0;
+  background-color: #2f303a;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+
+  .social-link-list {
+    margin: 60px 0;
+  }
+  .container {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: baseline;
+    }
+    @media screen and (min-width: 1200px) {
+      justify-content: space-between;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    padding: 60px 89px 60px 76px;
+    .social-link-list {
+      display: inline-block;
+      margin-top: auto;
+      text-align: center;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+    align-items: baseline;
+    margin: 0 auto;
+    padding: 60px 0;
+
+    .footer-form {
+      flex-wrap: wrap;
+      padding-top: 0;
+    }
+    .footer-form-input {
+      width: 358px;
+    }
+
+    .social-link-list {
+      margin-top: 0;
+      margin-bottom: 0;
+      text-align: start;
+    }
+  }
+
+  .footer-adress {
+    padding-top: 20px;
+
+    line-height: 1.71428;
+    letter-spacing: 0.03em;
+  }
+  .footer-adress-link {
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+  .footer-adress-map {
+    color: #ffffff;
+  }
+  .footer-adress-mail,
+  .footer-adress-call {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+/*.footer-form-btn {
+  width: 200px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: #2196f3;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: var(--font-weight-secondary);
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    background-image: url('../images/icon_send.svg');
+    fill: white;
+  }*/
